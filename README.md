@@ -8,13 +8,14 @@
 ## 二、使用方法
 
 ``` 
-python -m pip install python-docx, pdf2image
-python pdf2imags.py
-python img2str.py
+1. python -m pip install python-docx, pdf2image, pytesseract
+2. 安装软件Tesseract-OCR
+3. python pdf2imags.py
+4. python img2str.py
 ```
 
 
- 
 
+## 三、参考资料
 
-
+[1] [安装配置软件Tesseract-OCR](https://blog.csdn.net/showgea/article/details/82656515)
