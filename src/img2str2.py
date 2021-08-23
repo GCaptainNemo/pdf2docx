@@ -1,7 +1,7 @@
 import easyocr
 import cv2
 
-PROPORTION = 3
+PROPORTION = 4
 reader = easyocr.Reader(['en'])
 img = cv2.imread('../image/8.png')
 img = cv2.resize(img, (int(img.shape[0] / PROPORTION), int(img.shape[1] / PROPORTION)), cv2.INTER_CUBIC)

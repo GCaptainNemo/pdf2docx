@@ -8,7 +8,7 @@ from pdf2image.exceptions import (
 )
 
 
-def pdf2image2(pdfPath, imagePath, pageNum):
+def pdf2image2(pdfPath, imagePath):
     # dpi = 72 -> 612 x 792
     with tempfile.TemporaryDirectory() as path:
         images_from_path = convert_from_path(pdfPath, output_folder=path, dpi=500)
@@ -19,7 +19,7 @@ def pdf2image2(pdfPath, imagePath, pageNum):
         # print(images_from_path)
 
 
-pdfPath = "./NewYorkCourseMaterials.pdf"
-imagePath = "./image/"
-pdf2image2(pdfPath, imagePath, None)
+pdfPath = "../NewYorkCourseMaterials.pdf"
+imagePath = "../image/"
+pdf2image2(pdfPath, imagePath)
 
