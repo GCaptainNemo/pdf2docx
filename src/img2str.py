@@ -1,9 +1,11 @@
 from PIL import Image
-import pytesseract
+# import pytesseract
 import os
 import re
 import shutil
 from docx import Document
+import cv2
+
 
 # document = Document(docx="NewYorkCourseMateirals.docx")
 document = Document()
@@ -34,4 +36,4 @@ for i in range(195):
     # print(type(text))
 
 document.save("Content.docx")
-
+#
